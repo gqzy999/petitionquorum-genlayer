@@ -1,0 +1,146 @@
+{
+  "project": "PetitionQuorum",
+  "network": "studionet",
+  "chainId": 61999,
+  "contractAddress": "0xeb32b2618A70122853bC8665aeaF8e512f814FAa",
+  "deployTx": "0xd298519172c6d75dbf147f8b9e4d427dbaafbadbc941c209847f188c8cdafb11",
+  "sourceFile": "contracts/petitionquorum.py",
+  "sourceSha256": "5579f43edb45a5c0de37306bc82add94c4c455fb2eb9aaa930a6c4a49c5d4c6b",
+  "verified": true,
+  "loop": {
+    "steps": [
+      {
+        "label": "deploy",
+        "hash": "0xd298519172c6d75dbf147f8b9e4d427dbaafbadbc941c209847f188c8cdafb11",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "create-A",
+        "hash": "0x48c50063de0f164f6baa452f0b407ee3b051bbcaf0f8546a3d85c8f0d4f5711b",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "create-B",
+        "hash": "0xc24308a4905b098a3b4c5c764716eec642da9dcc1b31f05ffc99b8e759e33dfe",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "sign-A-1",
+        "hash": "0xdc4840310a310d632029340420149e63c90ae5128c3c085392aaadc82bdec93a",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "sign-A-duplicate",
+        "hash": "0xa1c35e2e11850dec5381f96df4aec2cbe3f2980ce6111eb5f184d6b275a1e3b0",
+        "executionResult": "ERROR",
+        "errorCode": "ALREADY_SIGNED"
+      },
+      {
+        "label": "sign-A-unreachable",
+        "hash": "0xef32c694bb4e56c89df3e4575d9f64444b40c9c185928b19ce4abd737464ebb5",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "sign-A-2",
+        "hash": "0xcebcf4216cecb5659997cc77cb0abfab607c2caa0a57d920e309bae5ab367862",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "sign-A-certified",
+        "hash": "0xd899cf40c487f95950b8f9c842fce826d0bf075d411ca260a402915f3906c4eb",
+        "executionResult": "ERROR",
+        "errorCode": "INVALID_STATUS"
+      },
+      {
+        "label": "sign-missing",
+        "hash": "0xd051a40fb0081f7c9891a6c6d7d3761bc7d2ed072276c743e070a3013840b97c",
+        "executionResult": "ERROR",
+        "errorCode": "NOT_FOUND"
+      },
+      {
+        "label": "create-cap-2",
+        "hash": "0xa9f3cccd11deb8f0a45278751ac0fd950207c824941fb89dc181919c018c8b13",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "create-cap-3",
+        "hash": "0x043827144a94d24d0a5c14b59e6af314928d2678f67c24b32b45dbedb18238fc",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "create-cap-4",
+        "hash": "0xc2bfb6101d1444e617a526efbad97eddf4bdd7af3cd2297283f06f81b04002de",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "create-cap-5",
+        "hash": "0xc127713d95bc51bd67a176e05942eda78600c3054e678e2f82e82b19860d9579",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "create-cap-6",
+        "hash": "0xc090ea3ebcff3444542c6c2b2cad0e127a024d9736bd392b9346bd4a1025a807",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "create-cap-7",
+        "hash": "0x43deaa9ad87a917e34038cc8dffb7e96e5f57cf99c9f6a00a301e156a446e513",
+        "executionResult": "SUCCESS",
+        "errorCode": null
+      },
+      {
+        "label": "create-cap-9th",
+        "hash": "0xfa0d5e40d5b14777ad13b8b5eded62a678ca5ea3bc9357f743ad4e291aaceac9",
+        "executionResult": "ERROR",
+        "errorCode": "CREATOR_CAP"
+      },
+      {
+        "label": "create-bad-threshold",
+        "hash": "0x710d465bf88dc421e365e103b99ef5238a4c5d2a2b275e79b6e98062150f628f",
+        "executionResult": "ERROR",
+        "errorCode": "INVALID_INPUT"
+      }
+    ],
+    "finalCounts": {
+      "petition_count": 8,
+      "total_signatures": 2
+    },
+    "accounts": {
+      "creator": "0x08d6Ec1bd0d1053041FC32017FA0f4F09e5CfFa5",
+      "signer1": "0xDF0fB7AF4521E2fcDd22F0C7fe1fe63c53F60D2c",
+      "signer2": "0xae17abADfECD166c41Dc01EE21b5e5549E0a0aBc",
+      "signer3": "0x36e3AE54b6186a992Cc4a129ff4BCB48B5440986",
+      "outsider": "0xA0EE2F41Fe54d4CCC9f2687632A7295dEC725135"
+    }
+  },
+  "tests": {
+    "standin": "16 passed",
+    "direct": "10 passed",
+    "lint": "passed",
+    "validation": "passed"
+  },
+  "prior_attempts": [
+    {
+      "run": 1,
+      "outcome": "deploy FINALIZED/ERROR; deploy hash not recorded (script asserted execution before checkpointing the hash; ephemeral funder key lost with the process)",
+      "cause": "undiagnosed at the time"
+    },
+    {
+      "run": 2,
+      "outcome": "deploy FINALIZED/ERROR; receipt error: no contract defined",
+      "cause": "contract class did not subclass gl.Contract, so the on-chain runner found no registered contract; fixed by declaring class PetitionQuorum(gl.Contract)",
+      "note": "deploy hash not preserved (checkpoint overwritten by the successful run)"
+    }
+  ]
+}

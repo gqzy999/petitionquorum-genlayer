@@ -1,0 +1,12 @@
+{
+  "contractAddress": "0xeb32b2618A70122853bC8665aeaF8e512f814FAa",
+  "network": "studionet",
+  "chainId": 61999,
+  "sourceSha256": "5579f43edb45a5c0de37306bc82add94c4c455fb2eb9aaa930a6c4a49c5d4c6b",
+  "deployTx": "0xd298519172c6d75dbf147f8b9e4d427dbaafbadbc941c209847f188c8cdafb11",
+  "verified": true,
+  "counts": {
+    "petition_count": 8,
+    "total_signatures": 2
+  }
+}
